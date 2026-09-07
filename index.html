@@ -350,6 +350,17 @@
   </footer>
 
   <script>
+    <script>
+function demoLogin() {
+  const username = document.getElementById("username").value.trim();
+
+  if (username === "") {
+    alert("Please enter a username.");
+  } else {
+    alert("Welcome, " + username + "! This is a demo login.");
+  }
+}
+</script>
     // Demo rate only.
     // Real exchange rates should come from an authorized provider.
     const USD_TO_NGN = 1333.88;
@@ -388,7 +399,7 @@
 
     convertCurrency();
   </script>
-<section class="login-section">
+<input type="text" id="username" placeholder="Username">
   <h2>Welcome to Dollar Bridge</h2>
   <p>Sign in or create a demo account to continue.</p>
 
@@ -396,7 +407,9 @@
   <input type="password" placeholder="Password">
 
   <button type="button" onclick="alert('Demo login only — no real account is created.')">
-    Login
+    <button type="button" onclick="demoLogin()">
+  Login
+    </button>
   </button>
 <section class="dashboard">
   <h2>Dollar Bridge Dashboard</h2>
