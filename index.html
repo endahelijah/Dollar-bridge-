@@ -32,6 +32,26 @@
 .wallet .dashboard-card p {
   font-size: 24px;
   font-weight: bold;
+}.wallet-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.wallet-actions button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wallet-actions button:hover {
+  opacity: 0.9;
 }
   <style>
     * {
@@ -407,6 +427,15 @@
   </div>
 
   <small>Demo balances only — no real funds are held.</small>
+      <div class="wallet-actions">
+  <button type="button" onclick="alert('Demo only — sending money is not available.')">
+    Send
+  </button>
+
+  <button type="button" onclick="alert('Demo only — receiving money is not available.')">
+    Receive
+  </button>
+      </div>
     </section>
     <div class="transaction">
   <p><strong>USD to NGN Conversion</strong></p>
