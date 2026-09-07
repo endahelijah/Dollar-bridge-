@@ -398,7 +398,7 @@ function demoLogin() {
     }
 
     convertCurrency();
-  </script>function createDemoAccount() {
+  function createDemoAccount()
   const username = document.getElementById("username").value.trim();
 
   if (username === "") {
@@ -407,7 +407,7 @@ function demoLogin() {
     localStorage.setItem("dollarBridgeDemoUser", username);
     alert("Demo account created for " + username + "!");
   }
-}
+}</script>
   
 <input type="text" id="username" placeholder="Username">
   <h2>Welcome to Dollar Bridge</h2>
