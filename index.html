@@ -18,6 +18,20 @@
   height: 100%;
   background: #16a34a;
   border-radius: 10px;
+}.wallet {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px 7%;
+  text-align: center;
+}
+
+.wallet h2 {
+  margin-bottom: 25px;
+}
+
+.wallet .dashboard-card p {
+  font-size: 24px;
+  font-weight: bold;
 }
   <style>
     * {
@@ -379,6 +393,21 @@
 
   <div class="dashboard-card">
     <h3>Recent Transactions</h3>
+    <section class="wallet">
+  <h2>My Wallet</h2>
+
+  <div class="dashboard-card">
+    <h3>USD Balance</h3>
+    <p>$1,000.00</p>
+  </div>
+
+  <div class="dashboard-card">
+    <h3>NGN Balance</h3>
+    <p>₦1,333,880.00</p>
+  </div>
+
+  <small>Demo balances only — no real funds are held.</small>
+    </section>
     <div class="transaction">
   <p><strong>USD to NGN Conversion</strong></p>
   <p>$100.00 → ₦133,388.00</p>
