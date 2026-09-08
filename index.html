@@ -352,7 +352,9 @@
 
   <script>
     
-function demoLogin() {
+function demoLogin()function completeVerification() {
+  alert("Verification submitted successfully! Your status is now under review.");
+    } {
   const username = document.getElementById("username").value.trim();
 
   if (username === "") {
@@ -530,7 +532,7 @@ function demoLogin() {
     <option>United Kingdom</option>
   </select>
 
-  <button type="button" onclick="alert('Demo verification submitted successfully!')">
+  <button type="button" onclick="completeVerification()">
     Submit Verification
   </button>
 
